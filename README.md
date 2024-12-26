@@ -34,6 +34,7 @@ Borrow = A’B
 Figure -02 HALF Subtractor
 
 **Truthtable**
+<img width="297" alt="ex 3 truth table" src="https://github.com/user-attachments/assets/1a0c6b95-95ee-4241-abdc-233a041f1cbe" />
 
 **Procedure**
 
@@ -51,11 +52,27 @@ Figure -02 HALF Subtractor
 **Program:**
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+module encod_data(d, x, y, z); 
+    input [7:0] d; 
+    output x; 
+    output y; 
+    output z; 
+  assign#3 x=d[4]|d[5]|d[6]|d[7]; 
+  assign#3 y=d[2]|d[3]|d[6]|d[7]; 
+  assign#3 z=d[1]|d[3]|d[5]|d[7];
+  endmodule
 
-Developed by: RegisterNumber:*/
+Developed by: Sriranjani.M
+RegisterNumber:24900016
+*/
 
 **RTL Schematic**
+<img width="678" alt="ex 3 rtl" src="https://github.com/user-attachments/assets/dbba946a-4b93-4477-8d36-1490ee71078e" />
+
 
 **Output/TIMING Waveform**
+<img width="623" alt="ex 3 timing diagram" src="https://github.com/user-attachments/assets/9ffc6027-08d0-4782-b36a-192f40095397" />
+
 
 **Result:**
+Hence to design a half adder and half subtractor circuit and verified its truth table in Quartus using Verilog programming.
